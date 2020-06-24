@@ -1,0 +1,32 @@
+<div>
+<div class="container">
+  <div>
+    <input placeholder="Wpisz zadanie" [(ngModel)] ="newTask">
+    <button class="button" (click)="add()">Dodaj</button>
+  </div>
+</div>
+
+<div class="containter">
+
+  <div>
+    <ul class="tasks">
+      <li *ngFor ="let task of tasksList">
+        {{task}}
+        <button class="remove" (click)="remove(task)">Usuń</button>
+        <button class="done" (click)="done(task)">Zrobione</button>
+
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <ul class="tasksdone"> 
+      <li *ngFor ="let task of tasksDone">
+        {{task}}
+
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>

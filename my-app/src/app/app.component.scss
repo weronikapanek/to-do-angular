@@ -1,0 +1,47 @@
+html {
+    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+body {
+    height: 100vh;
+    background-color: cornflowerblue;
+    
+}
+.container {
+    display: flex; 
+    justify-content: center;
+    margin: 0;
+}
+
+.done, .remove {
+    background-color: transparent;
+    border: 2px solid black;
+    width: 150px;
+    height: 25px;
+    margin: 10px;
+}
+
+.button {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 150px;
+    height: 75px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: transparent;
+
+}
+
+.tasks {
+    
+}
+
+input {
+    height: 75px;
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+::placeholder {
+    padding-left: 15px;
+    color: black;
+}
